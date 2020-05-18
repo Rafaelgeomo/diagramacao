@@ -1,0 +1,158 @@
+header,footer {
+    /*background-color:silver;*/
+   /* min-height: 150px;*/
+    
+}
+main {
+    /*background-color:yellow;*/
+    min-height: 600px;
+}
+.site-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-logo {
+    width: 200px;
+    height: 120px;
+    display: block;
+    background-image: url("logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -5000px;
+    outline: none;
+    /*Eixo x (primeiro) pode colocar Left, right e center , no eixo Y (segundo) pode colocar top, botton e center*/
+    background-position:center center;
+    /*margin:15px 0;comando para mexer no top, right, bottom e left, exatamente nessa ordem*/
+    padding:15px 0; /*comando para mexer dentro da caixa, começando pelo top...*/
+
+}
+.header-menu li {
+    display: inline-block;
+    width: 200px;
+    float:left;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+
+}
+.header-menu li a {
+    color: inherit; /*forçar com que o link pegue a cor da lista*/
+    text-decoration: inherit;
+    display: inherit;
+
+}
+body {
+    font-family: arial,verdana;
+    font-size: 100%;
+    line-height: 1.5; /*comando para aumentar o tamanho da linha*/
+    font-weight: normal; /*colocar em negrito*/
+    font-style: normal;/*colocar em itálico*/
+}
+/*comando para deixar o botão destacado*/
+.header-menu li:hover {
+    background-color: orange;
+    color: black;
+}
+.main-highlight {
+    position: relative;
+}
+.main-highlight-title {
+    font-size: 2.5em;
+    color: #ffffff;
+    background-color:rgba(0, 0, 0,0.4);/*rgba é com opacidade*/
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5em;
+    opacity: 1;
+}
+.main-highlight-image{
+    display: block;
+}
+section[role=posts]{
+    /*background-color:silver;*/
+    width: 900px;
+    float: left;
+    min-height: 900px;
+    padding: 32px;
+}
+[role=sidebar] {
+    background-color: silver;
+    width:300px;
+    float:right;
+    padding: 32px;
+    min-height: 1100px;
+}
+section[role=posts] article {
+    padding-bottom: 16px;
+
+}
+section[role=posts] h1 {
+    font-size: 2.5em;
+
+}
+section[role=posts] p:last-child {
+    padding-top: 16px;
+    font-style: italic;
+}
+.footer-social a {
+    background-image: url(social.png);
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+    text-indent: -9000px;
+    float:left;
+    margin-right: 10px;
+}
+.bullets a{
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+.bullets {
+    position: absolute;
+    bottom: 0.5em;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 0;
+    padding: 0.5em;
+}
+.bullets a.active {
+    color:orange;
+}
+.fb:hover {
+    background-position: -31px -13px; 
+} 
+.tw:hover{ 
+    background-position: -83px -13px; 
+} 
+.in:hover { 
+    background-position: -343px -13px; 
+} 
+ 
+.fb { 
+    background-position: -31px -292px; 
+} 
+.tw { 
+    background-position: -83px -292px; fff
+} 
+.in { 
+    background-position: -343px -292px;fff
+} 
+footer {
+    background-color: black;
+    color: white;
+    padding: 16px;
+}
+footer p {
+    float: left;
+    line-height: 43px;
+}
+footer nav {
+    float:right;
+}
+ 
